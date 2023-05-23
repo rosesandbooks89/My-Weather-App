@@ -1,29 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./Assets/style.css" />
-
+    
     <title>Weather Dashboard-Search Your City</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <section class="title">
-      <h1>Weather Dashboard</h1>
+        <h1>Weather Dashboard</h1>
     </section>
     <main>
-      <aside class="aside">
-        <section id="search" class="search">
-          <h1>Search for a City:</h1>
-          <form action="">
-            <input id="typed-text" type="search" hint="city" />
-            <button id="search-button">Search</button>
-          </form>
+        <aside class="aside">
+            <section id="search" class="search">
+                <h1>Search for a City:</h1>
+                <form action="">
+                    <input id="typed-Text" type="search" hint="city">
+                    <button id="search-button">Search</button>
+                </form>
+            </section>
+
+            <!-- <section id="city" class="city"> -->
+                <!-- <div class="citybtns">
+                    <button id="atlanta">Atlanta</button>
+                    <button id = "denver">Denver</button>
+                    <button id = "seattle">Seattle</button>
+                    <button id = "sanFran">San Francisco</button>
+                    <button id = "orlando">Orlando</button>
+                    <button id = "newYork">New York</button>
+                    <button id = "chicago">Chicago</button>
+                    <button id = "austin">Austin</button>
+                </div> -->
+            <!-- </section> -->
+        </aside>
+
+        <section id="results" class="results">
+            <div>
+                <h1 id="cityname"></h1>
+                <h3 id="temp"></h3>
+                <h3 id="wind"></h3>
+                <h3 id="humidity"></h3>
+            </div>
+
         </section>
-      </aside>
+
+        <section id="5-day" class="5-day">
+            <div class="1stforecast">
+                <h2 id="date-forecast"></h2>
+                <h2 id="emoji"></h2>
+                <h2 id="forecast-temp"></h2>
+                <h2 id="forest-wind"></h2>
+                <h2 id="forest-hum"></h2>
+            </div>
+
+            <div class="2ndforecast">
+                <h2 id="date-forecast"></h2>
+                <h2 id="emoji"></h2>
+                <h2 id="forecast-temp"></h2>
+                <h2 id="forest-wind"></h2>
+                <h2 id="forest-hum"></h2>
+            </div>
+
+            <div class="3rdforecast">
+                <h2 id="date-forecast"></h2>
+                <h2 id="emoji"></h2>
+                <h2 id="forecast-temp"></h2>
+                <h2 id="forest-wind"></h2>
+                <h2 id="forest-hum"></h2>
+            </div>
+
+            <div class="4thforecast">
+                <h2 id="date-forecast"></h2>
+                <h2 id="emoji"></h2>
+                <h2 id="forecast-temp"></h2>
+                <h2 id="forest-wind"></h2>
+                <h2 id="forest-hum"></h2>
+            </div>
+
+            <div class="5thforecast">
+                <h2 id="date-forecast"></h2>
+                <h2 id="emoji"></h2>
+                <h2 id="forecast-temp"></h2>
+                <h2 id="forest-wind"></h2>
+                <h2 id="forest-hum"></h2>
+            </div>
+        </section>
     </main>
     <script src="./Assets/script.js"></script>
-  </body>
-</html>
+</body>

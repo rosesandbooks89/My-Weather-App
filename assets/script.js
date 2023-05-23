@@ -1,6 +1,8 @@
 // api key 76282a5772fc410e30d3610f2470567d
 var APIKey = "76282a5772fc410e30d3610f2470567d";
 var city;
+var today = document.getElementById("today");
+var forecast = document.getElementById("forecast");
 var searchButton = document.getElementById("search-button");
 var typedText = document.getElementById("typed-text");
 var coordinates =
