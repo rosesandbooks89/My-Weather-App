@@ -1,37 +1,29 @@
-# 06
+# Server-Side APIs Challenge: Weather Dashboard
 
 ## Your Task
 
-My task was to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+My task was to create a weather app that allows a user to look for weather from multiple cities. 
 
-I used the [Day.js](https://day.js.org/en/) library to work with date and time. 
+I used https://openweathermap.org/forecast5 to get api key as well as the calls to get the weather data
 
 ## Acceptance Criteria
 
-* GIVEN I am using a daily planner to create a schedule
-* WHEN I open the planner
-* THEN the current day is displayed at the top of the calendar
-* WHEN I scroll down
-* THEN I am presented with timeblocks for standard business hours
-* WHEN I view the timeblocks for that day
-* THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-* WHEN I click into a timeblock
-* THEN I can enter an event
-* WHEN I click the save button for that timeblock
-* THEN the text for that event is saved in local storage
-* WHEN I refresh the page
-* THEN the saved events persist
+* GIVEN a weather dashboard with form inputs
+* WHEN I search for a city
+* THEN I am presented with current and future conditions for that city and that city is added to the search history
+* WHEN I view current weather conditions for that city
+* THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
+* WHEN I view future weather conditions for that city
+* THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+* WHEN I click on a city in the search history
+* THEN I am again presented with current and future conditions for that city
 
 ## Struggles
-This weeks assignment proved to be very difficult for creating the loops that was needed to create the color change me but i made it with the help of my tutor and BCS assisstants. The understanding of "why" each fucntion works the way that it does not 100% there but I will get there.  
-
-## Additional Notes
-* HTML contains an extra block for testing color change when outside working hours
-* Header contains a legend for what colors represent past,present,futrure.
+This weeks assignment proved to be very difficult knowing where to get the code. After working with tutor, teammates BCS and TAs, getting code from assignments is acceptable.
 
 ## Link to Deployed Application
 
-https://rosesandbooks89.github.io/my-daily-planner/
+https://rosesandbooks89.github.io/My-weather-app/
 
 ## Screenshots
 ![alt text](./assets/images/image1.png)

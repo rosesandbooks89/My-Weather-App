@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./assets/style.css" />
 
     <title id="title" class="title">Weather</title>
@@ -17,103 +11,101 @@
 
   <body>
     <header><h1>What's the Weather Like?</h1></header>
-    
 
-        <section class="searchContainer">
-            <h2>Search for a City</h2>
-            <form id="search-form">
-                <p id="inputContainer"><input type="text" id="cityInput" name="inputContainer" placeholder="Enter City name"></p>
-                <button id=searchButton class="btn btn-info btn-block">Search</button>
+    <section class="searchContainer">
+      <h2>Search for a City</h2>
+      <form id="search-form">
+        <p id="inputContainer">
+          <input
+            type="text"
+            id="cityInput"
+            name="inputContainer"
+            placeholder="Enter City name"
+          />
+        </p>
+        <button id="searchButton" class="btn btn-info btn-block">Search</button>
+      </form>
+      <hr id="elementBreak" style="display: inline-block" />
+      <ul class="history"></ul>
+    </section>
 
-            </form>
-            <hr id="elementBreak" style="display: inline-block;">
-            <ul class="history">
-                
-            </ul>
-        </section>
-    
-        <main id="searchResults">
-            <h2 id="cityName"></h2>
-            <p id= currentWeather class="date-0 weather" style="display: none;">The weather right now: </p>
-            <div id="current-weather" class="current-weather">
-                <p class="temp" id="dTemp-0"></p>
-                <p class="wind" id="dWind-0"></p>
-                <p class="humidity" id="dHumidity-0"></p>
-            </div>
-        </main>
-    
+    <main id="searchResults">
+      <h2 id="cityName"></h2>
+      <p id="currentWeather" class="date-0 weather" style="display: none">
+        The weather right now:
+      </p>
+      <div id="current-weather" class="current-weather">
+        <p class="temp" id="dTemp-0"></p>
+        <p class="wind" id="dWind-0"></p>
+        <p class="humidity" id="dHumidity-0"></p>
+      </div>
+    </main>
 
     <aside>
-        <h3 id= forecast style="display: none;">5-Day Forecast: </h3> 
-        <br>
-        <section id="weatherContainer">
-            <div class="icons" >
-                <p class="date-1 weather"></p>
-                <div class="image"><img src="" class="imgClass" id="img-1" alt=""></div>
-                <div>
-                    <p class="temp" id="dTemp-1"></p>
-                    <p class="wind" id="dWind-1"></p>
-                    <p class="humidity" id="dHumidity-1"></p>
-                </div>
-            </div>
-    
-            <div class="icons" >
-                <p class="date-2 weather"></p>
-                <div class="image"><img src="" class="imgClass" id="img-2" alt=""></div>
-                <div>
-                    <p class="temp" id="dTemp-2"></p>
-                    <p class="wind" id="dWind-2"></p>
-                    <p class="humidity" id="dHumidity-2"></p>
-                </div>
-            </div>
-    
-            <div class="icons" >
-                <p class="date-3 weather"></p>
-                <div class="image"><img src="" class="imgClass" id="img-3" alt=""></div>
-                <div>
-                    <p class="temp" id="dTemp-3"></p>
-                    <p class="wind" id="dWind-3"></p>
-                    <p class="humidity" id="dHumidity-3"></p>
-                </div>
-            </div>
-    
-            <div class="icons" >
-                <p class="date-4 weather"></p>
-                <div class="image"><img src="" class="imgClass" id="img-4" alt=""></div>
-                <div>
-                    <p class="temp" id="dTemp-4"></p>
-                    <p class="wind" id="dWind-4"></p>
-                    <p class="humidity" id="dHumidity-4"></p>
-                </div>
-            </div>
-    
-            <div class="icons" >
-                <p class="date-5 weather"></p>
-                <div class="image"><img src="" class="imgClass" id="img-5" alt=""></div>
-                <div>
-                    <p class="temp" id="dTemp-5"></p>
-                    <p class="wind" id="dWind-5"></p>
-                    <p class="humidity" id="dHumidity-5"></p>
-                </div>
-            </div>
-        </section>    
+      <h3 id="forecast" style="display: none">5-Day Forecast:</h3>
+      <br />
+      <section id="weatherContainer">
+        <div class="icons">
+          <p class="date-1 weather"></p>
+          <div class="image">
+            <img src="" class="imgClass" id="img-1" alt="" />
+          </div>
+          <div>
+            <p class="temp" id="dTemp-1"></p>
+            <p class="wind" id="dWind-1"></p>
+            <p class="humidity" id="dHumidity-1"></p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <p class="date-2 weather"></p>
+          <div class="image">
+            <img src="" class="imgClass" id="img-2" alt="" />
+          </div>
+          <div>
+            <p class="temp" id="dTemp-2"></p>
+            <p class="wind" id="dWind-2"></p>
+            <p class="humidity" id="dHumidity-2"></p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <p class="date-3 weather"></p>
+          <div class="image">
+            <img src="" class="imgClass" id="img-3" alt="" />
+          </div>
+          <div>
+            <p class="temp" id="dTemp-3"></p>
+            <p class="wind" id="dWind-3"></p>
+            <p class="humidity" id="dHumidity-3"></p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <p class="date-4 weather"></p>
+          <div class="image">
+            <img src="" class="imgClass" id="img-4" alt="" />
+          </div>
+          <div>
+            <p class="temp" id="dTemp-4"></p>
+            <p class="wind" id="dWind-4"></p>
+            <p class="humidity" id="dHumidity-4"></p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <p class="date-5 weather"></p>
+          <div class="image">
+            <img src="" class="imgClass" id="img-5" alt="" />
+          </div>
+          <div>
+            <p class="temp" id="dTemp-5"></p>
+            <p class="wind" id="dWind-5"></p>
+            <p class="humidity" id="dHumidity-5"></p>
+          </div>
+        </div>
+      </section>
     </aside>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>
