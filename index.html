@@ -12,18 +12,18 @@
     />
     <link rel="stylesheet" href="./Assets/style.css" />
 
-    <title id="title" class="title">Weather Dashboard-Search Your City</title>
+    <title id="title" class="title">Weather</title>
   </head>
 
   <body>
-    <header><h1>Weather Dashboard</h1></header>
+    <header><h1>What's the Weather Like?</h1></header>
     
 
         <section class="searchContainer">
             <h2>Search for a City</h2>
             <form id="search-form">
-                <p id="inputContainer"><input type="text" id="cityInput" name="inputContainer" ="Enter City name"></p>
-                <button class="btn btn-info btn-block">Search</button>
+                <p id="inputContainer"><input type="text" id="cityInput" name="inputContainer" placeholder="Enter City name"></p>
+                <button id=searchButton class="btn btn-info btn-block">Search</button>
 
             </form>
             <hr id="elementBreak" style="display: inline-block;">
@@ -33,9 +33,9 @@
         </section>
     
         <main id="searchResults">
-            <h2 id="cityName">---City Name---</h2>
-            <p class="date-0 weather">Weather at the moment</p>
-            <div>
+            <h2 id="cityName"></h2>
+            <p id= currentWeather class="date-0 weather" style="display: none;">The weather right now: </p>
+            <div id="current-weather" class="current-weather">
                 <p class="temp" id="dTemp-0"></p>
                 <p class="wind" id="dWind-0"></p>
                 <p class="humidity" id="dHumidity-0"></p>
@@ -44,7 +44,8 @@
     
 
     <aside>
-        <h3>5-Day Forecast: </h3>
+        <h3 id= forecast style="display: none;">5-Day Forecast: </h3> 
+        <br>
         <section id="weatherContainer">
             <div class="icons" >
                 <p class="date-1 weather"></p>

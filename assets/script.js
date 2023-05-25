@@ -1,4 +1,4 @@
-var apiKey = "8bb6c2d489759cc78039c821cced7698";
+var apiKey = "76282a5772fc410e30d3610f2470567d";
 var cityInput = document.getElementById("cityInput");
 var searchHistory = [];
 
@@ -12,6 +12,7 @@ function getCurrentWeather(cityName) {
             displayCurrentWeather(data);
             getFiveDayWeather(cityName);
         });
+        document.getElementById("currentWeather").removeAttribute("style");
 }
 
 // Function to fetch the 5-day weather forecast
@@ -60,14 +61,15 @@ function displayFiveDayWeather(weatherList) {
         var wind = document.getElementById("dWind-" + (i + 1));
         var humidity = document.getElementById("dHumidity-" + (i + 1));
         var icon = document.getElementById("img-" + (i + 1));
-
         var weatherData = weatherList[i];
+        
         date.textContent = new Date(weatherData.dt * 1000).toLocaleDateString();
         temp.textContent = "Temperature: " + temperatureConverter(weatherData.main.temp) + "°F";
         wind.textContent = "Wind: " + weatherData.wind.speed;
         humidity.textContent = "Humidity: " + weatherData.main.humidity;
         icon.src = "https://openweathermap.org/img/wn/" + weatherData.weather[0].icon + ".png";
         icon.alt = weatherData.weather[0].description;
+        document.getElementById("forecast").removeAttribute("style");
     }
 }
 

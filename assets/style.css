@@ -8,7 +8,7 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(./images/pexels-sean-manning-728880.jpg);
+    background-image: url(./images/pexels-gije-cho-16456694.jpg);
 }
 
 /* Weather Dashboard Styles */
@@ -28,13 +28,15 @@ header {
     padding: 1%;
     text-align: center;
 }
-
+#searchButton {
+    background-color: #304a63;
+}
 h2 {
     margin-bottom: 10px;
 }
 
 li {
-    background-color: #5797c5;
+    background-color: #306341;
     padding: 5px;
     margin-bottom: 15px;
     border-radius: 6px;
@@ -92,11 +94,14 @@ hr#elementBreak {
 
 #cityName {
     margin-bottom: 10px;
+    font-size: 3rem;
 }
 
 .weather {
-    font-weight: bold;
+    font-weight: lighter;
+    font-size: 2rem;
 }
+
 
 .image {
     margin-bottom: 10px;
@@ -117,11 +122,21 @@ aside {
 
 .icons {
     margin-bottom: 20px;
+    background-color: rgba(0,135,122,0.5);
+    color: white;
 }
+/* .current-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0,135,122,0.5); */
+
+/* } */
 
 #weatherContainer {
     display: flex;
     justify-content: space-around;
+    
 }
 
   /* Media Queries */
