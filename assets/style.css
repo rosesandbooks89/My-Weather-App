@@ -1,5 +1,141 @@
-.card {
-    display: flex;
-    align-items: center;
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
 
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./images/pexels-sean-manning-728880.jpg);
+}
+
+/* Weather Dashboard Styles */
+
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.searchContainer {
+    color:black;
+    float: left;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 1%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+li {
+    background-color: #5797c5;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#inputContainer {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+hr#elementBreak {
+    margin: 20px auto;
+    width: 100px;
+    border: none;
+    border-top: 1px solid #333;
+}
+
+.history {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.history li {
+    margin-bottom: 5px;
+}
+
+#searchResults {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#cityName {
+    margin-bottom: 10px;
+}
+
+.weather {
+    font-weight: bold;
+}
+
+.image {
+    margin-bottom: 10px;
+}
+
+.imgClass {
+    width: 50px;
+}
+
+.temp, .wind, .humidity {
+    margin-bottom: 5px;
+}
+
+aside {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.icons {
+    margin-bottom: 20px;
+}
+
+#weatherContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+  /* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    .searchContainer {
+        max-width: 300px;
+}
+    
+input[type="text"] {
+    width: 150px;
+}
+    
+aside {
+    margin-top: 10px;
+}
 }

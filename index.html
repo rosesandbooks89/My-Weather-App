@@ -12,28 +12,91 @@
     />
     <link rel="stylesheet" href="./Assets/style.css" />
 
-    <title>Weather Dashboard-Search Your City</title>
+    <title id="title" class="title">Weather Dashboard-Search Your City</title>
   </head>
 
   <body>
-    <section class="title">
-      <h1>Weather Dashboard</h1>
-    </section>
-    <main id="weather-main">
-      <aside class="aside">
-        <section id="search" class="search">
-          <h1>Search for a City:</h1>
-          <form action="">
-            <input id="typed-Text" type="search" hint="city" />
-            <button id="search-button">Search</button>
-          </form>
+    <header><h1>Weather Dashboard</h1></header>
+    
+
+        <section class="searchContainer">
+            <h2>Search for a City</h2>
+            <form id="search-form">
+                <p id="inputContainer"><input type="text" id="cityInput" name="inputContainer" ="Enter City name"></p>
+                <button class="btn btn-info btn-block">Search</button>
+
+            </form>
+            <hr id="elementBreak" style="display: inline-block;">
+            <ul class="history">
+                
+            </ul>
         </section>
-        <div class="card" >
+    
+        <main id="searchResults">
+            <h2 id="cityName">---City Name---</h2>
+            <p class="date-0 weather">Weather at the moment</p>
+            <div>
+                <p class="temp" id="dTemp-0"></p>
+                <p class="wind" id="dWind-0"></p>
+                <p class="humidity" id="dHumidity-0"></p>
+            </div>
+        </main>
+    
 
-        </div>
-
-      
-    </main>
+    <aside>
+        <h3>5-Day Forecast: </h3>
+        <section id="weatherContainer">
+            <div class="icons" >
+                <p class="date-1 weather"></p>
+                <div class="image"><img src="" class="imgClass" id="img-1" alt=""></div>
+                <div>
+                    <p class="temp" id="dTemp-1"></p>
+                    <p class="wind" id="dWind-1"></p>
+                    <p class="humidity" id="dHumidity-1"></p>
+                </div>
+            </div>
+    
+            <div class="icons" >
+                <p class="date-2 weather"></p>
+                <div class="image"><img src="" class="imgClass" id="img-2" alt=""></div>
+                <div>
+                    <p class="temp" id="dTemp-2"></p>
+                    <p class="wind" id="dWind-2"></p>
+                    <p class="humidity" id="dHumidity-2"></p>
+                </div>
+            </div>
+    
+            <div class="icons" >
+                <p class="date-3 weather"></p>
+                <div class="image"><img src="" class="imgClass" id="img-3" alt=""></div>
+                <div>
+                    <p class="temp" id="dTemp-3"></p>
+                    <p class="wind" id="dWind-3"></p>
+                    <p class="humidity" id="dHumidity-3"></p>
+                </div>
+            </div>
+    
+            <div class="icons" >
+                <p class="date-4 weather"></p>
+                <div class="image"><img src="" class="imgClass" id="img-4" alt=""></div>
+                <div>
+                    <p class="temp" id="dTemp-4"></p>
+                    <p class="wind" id="dWind-4"></p>
+                    <p class="humidity" id="dHumidity-4"></p>
+                </div>
+            </div>
+    
+            <div class="icons" >
+                <p class="date-5 weather"></p>
+                <div class="image"><img src="" class="imgClass" id="img-5" alt=""></div>
+                <div>
+                    <p class="temp" id="dTemp-5"></p>
+                    <p class="wind" id="dWind-5"></p>
+                    <p class="humidity" id="dHumidity-5"></p>
+                </div>
+            </div>
+        </section>    
+    </aside>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
