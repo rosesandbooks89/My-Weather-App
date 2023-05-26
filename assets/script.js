@@ -26,15 +26,13 @@ function getFiveDayWeather(cityName) {
     });
 }
 
-// TODO: Default funtion (not sure)
-
-// TODO: function for temperture converter may be needed. / got from W3Schools
+// function for temperture converter may be needed. / got from W3Schools
 function temperatureConverter(temp) {
   return Math.round((temp - 273.15) * 1.8 + 32);
 }
 
 // Function to display the current weather
-// TODO: convert temperture to Fahrenheit and add icon weather to function.
+// convert temperture to Fahrenheit and add icon weather to function.
 function displayCurrentWeather(data) {
   var cityName = document.getElementById("cityName");
   var date = document.querySelector(".date-");
@@ -52,7 +50,7 @@ function displayCurrentWeather(data) {
 }
 
 // Function to display the 5-day weather forecast
-// TODO: convert temperture to Fahrenheit
+// convert temperture to Fahrenheit
 function displayFiveDayWeather(weatherList) {
   for (var i = 0; i < 5; i++) {
     var date = document.querySelector(".date-" + (i + 1));
@@ -125,6 +123,3 @@ function loadSearchHistory() {
     displaySearchHistory();
   }
 }
-
-// Call the loadSearchHistory function when the page loads
-loadSearchHistory();
