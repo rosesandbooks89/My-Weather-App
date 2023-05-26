@@ -90,6 +90,10 @@ document.getElementById("search-form").addEventListener("submit", function (e) {
     }
   }
   cityInput.value = "";
+  if (city == "") {
+    alert("Please enter a city");
+    return false;
+  }
 });
 
 // Function to save search history to local storage
