@@ -24,7 +24,7 @@ This weeks assignment proved to be very difficult knowing where to get the code.
 
 ## Link to Deployed Application
 
-https://rosesandbooks89.github.io/My-weather-app/
+https://rosesandbooks89.github.io/My-Weather-App/
 
 ## Screenshots
 
