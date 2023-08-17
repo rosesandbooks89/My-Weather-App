@@ -21,6 +21,7 @@ I used https://openweathermap.org/forecast5 to get api key as well as the calls 
 ## Struggles
 
 This weeks assignment proved to be very difficult knowing where to get the code. After working with tutor, teammates BCS and TAs, getting code from assignments is acceptable.
+Used W3 Schools for tempature conversions
 
 ## Link to Deployed Application
 

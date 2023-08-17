@@ -65,9 +65,7 @@ function displayFiveDayWeather(weatherList) {
       "Temperature: " + temperatureConverter(weatherData.main.temp) + "°F";
     wind.textContent = "Wind: " + weatherData.wind.speed;
     humidity.textContent = "Humidity: " + weatherData.main.humidity;
-    icon.src =
-      "https://openweathermap.org/img/wn/" +
-      weatherData.weather[0].icon +
+    icon.src = "https://openweathermap.org/img/wn/" + weatherData.weather[0].icon +
       ".png";
     icon.alt = weatherData.weather[0].description;
     document.getElementById("forecast").removeAttribute("style");
@@ -92,7 +90,12 @@ document.getElementById("search-form").addEventListener("submit", function (e) {
     alert("Please enter a city");
     return false;
   }
+  
 });
+// if (city == "") {
+//   alert("Opps! That is not a city in my database.");
+//   return false;
+// }
 
 // Function to save search history to local storage
 function saveSearchHistory() {

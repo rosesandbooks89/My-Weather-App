@@ -13,6 +13,7 @@ li {
 body {
   font-family: Arial, sans-serif;
   background-image: url(./images/pexels-gije-cho-16456694.jpg);
+  background-size: cover;
 }
 
 /* Weather Dashboard Styles */
